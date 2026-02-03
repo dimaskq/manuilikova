@@ -1,7 +1,8 @@
 :root {
-  --color-bg: #0e0e0e;
+  --color-bg: #000000;
   --color-white-text: #ffffff;
-  --color-black-text: #0e0e0e;
+  --color-black-text: #000000;
   --color-white-bg: #ffffff;
   --color-white-text-hover: #cdcdcd;
+  --section-title-gray: rgb(150, 150, 150);
 }
