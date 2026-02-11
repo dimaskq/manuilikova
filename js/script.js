@@ -24,3 +24,24 @@ window.addEventListener("scroll", () => {
     header.classList.remove("header--scrolled");
   }
 });
+
+const items = document.querySelectorAll(".myWork__item");
+
+items.forEach((item) => {
+  const video = item.querySelector(".myWork__video");
+
+  if (!video) return;
+
+  item.addEventListener("mouseenter", () => {
+    video.currentTime = 0;
+
+    video.play().catch(() => {});
+  });
+
+  item.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+
+    video.load();
+  });
+});
